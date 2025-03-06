@@ -39,9 +39,9 @@ if page == "Home":
     # Profile image
     uploaded_image = st.file_uploader("Upload Profile Picture", type=["jpg", "png"])
     if uploaded_image is not None:
-        st.image(uploaded_image, width=300, caption="Uploaded Image")
+        st.image(uploaded_image, width=150, caption="Uploaded Image")
     else:
-        st.image("Promesse.jpg", width=280, caption="Default Image")
+        st.image("Promesse.jpg", width=100, caption="Default Image")
 
     # Display student details
     st.write(f"👤 **Name:** {profile_data['name']}")
